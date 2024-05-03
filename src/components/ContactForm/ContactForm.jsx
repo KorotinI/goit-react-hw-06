@@ -36,11 +36,11 @@ function ContactForm() {
     name: Yup.string()
       .min(3, "Too Short!")
       .max(50, "Too Long!")
-      .required("Required"),
+      .required("Input your name"),
     number: Yup.string()
       .min(3, "Too Short!")
       .max(50, "Too Long!")
-      .required("Required"),
+      .required("Input your number"),
   });
   return (
     <Formik
